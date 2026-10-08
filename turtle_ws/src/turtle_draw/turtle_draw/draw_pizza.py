@@ -30,8 +30,34 @@ class DrawPizza(Node):
     def pose_callback(self, msg):
         
         self.pose_ = msg
-    def move_forward(self):
-        pass
+
+    def move_forward(self,distance):
+        #packing msg
+        vel_msg = Twist()
+        speed=2
+        #no rotations or any movement except in x_axis
+        vel_msg.linear.x = abs(speed)
+
+        vel_msg.linear.y = 0
+        vel_msg.linear.z = 0
+        vel_msg.angular.x = 0
+        vel_msg.angular.y = 0
+        vel_msg.angular.z = 0
+
+        t0 = rclpy.Time.now().to_sec()
+        current_distance = 0
+        while(current_distance < distance):
+             #Publish the velocity
+             self.cmd_vel_pub_.publish(vel_msg)
+             #Takes actual time to velocity calculus
+             t1=rclpy.Time.now().to_sec()
+             #Calculates distancePoseStamped
+             current_distance= speed*(t1-t0)
+             #After the loop, stops the robot
+        vel_msg.linear.x = 0
+        #Force the robot to stop
+        self.cmd_vel_pub_.publish(vel_msg)
+        
 
     def set_pen(self):
         pass
@@ -42,14 +68,12 @@ class DrawPizza(Node):
                 
                 rgb = colors[color_code]
                 
-                
                 self.set_pen(rgb)
-                
             
                 distance = count * PIXEL_SIZE
                 
-                
                 self.move_forward(distance)
+
 
 
 def main(args=None):
