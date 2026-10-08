@@ -14,6 +14,11 @@ image= [ '16w',
         '1w1b1y1b1r4b7w',
         '1w4b11w'
     ]
+
+# [[(16,'w')],
+#  [(4,'w'),(4,'b'),(8,'w')]
+#  ,...]
+
 #maping RGB colours used in image with letters using in array
 colors = {
     'w': (255, 255, 255),
@@ -53,6 +58,6 @@ for row in image:
         rows.append(row_tup)
 
     image_pairs.append(rows)
-print(rows)
+print(image_pairs)
     
 
