@@ -28,8 +28,9 @@ colors = {
     'br': (165, 42, 42)
 }
 
-image_pairs= []
+
 def formating(image):
+    image_pairs= []
 
     for row in image:
         #pix=[x for x in row]
