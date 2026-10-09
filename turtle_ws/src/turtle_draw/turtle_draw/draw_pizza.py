@@ -11,7 +11,7 @@ import rclpy
 from rclpy.node import Node
 from turtlesim.msg import Pose
 #from geometry_msgs.msg import Twist
-from turtlesim.srv import TeleportRelative ,SetPen
+from turtlesim.srv import TeleportRelative ,TeleportAbsolute ,SetPen 
 from formating import  image , formating , colors
 
 image_pairs= formating(image)
@@ -20,10 +20,11 @@ PIXEL_SIZE = 0.5
 
 class DrawPizza(Node):
     def __init__(self):
-        super().__init__('turtle')
+        super().__init__('turtle_draw')
         self.pose_ = None
 
-        self.control_client = self.create_client(TeleportRelative, '/turtle1/teleport_relative', 10)
+        self.teleport_rel = self.create_client(TeleportRelative, '/turtle1/teleport_relative', 10)
+        self.teleport_abs = self.create_client(TeleportAbsolute, '/turtle1/teleport_absolute')
         self.pen_client= self.create_client(SetPen, '/turtle1/set_pen')
 
 
@@ -33,18 +34,33 @@ class DrawPizza(Node):
 
     def move_forward_request(self,distance):
         #packing msg
-        req = TeleportRelative().Request()
+        req = TeleportRelative.Request()
         #no rotations or any movement except in x_axis
         req.linear= float(distance)
         req.angular =0.0
-        return self.cli.call_async(self.req)
-        
+        return self.teleport_rel.call_async(self.req)
 
-    def set_pen(self):
+    def teleport_to(self,x,y):
         pass
 
+    def set_pen(self,rgb):
+        req= SetPen.Request()
+        req.r=rgb[0]
+        req.g=rgb[1]
+        req.b=rgb[2]
+        req.width=15
+        req.off=0
+        return self.pen_client.call_async(self.req)
+        
+
     def draw(self,image_pairs):
+        start_x=2.0
+        start_y=9.0
+        self.teleport_to(start_x, start_y)
+
         for row in image_pairs:
+            self.set_pen((0, 0, 0), off=1)
+            new_y = start_y - ((row.index()-1) * PIXEL_SIZE)
             for count, color_code in row:
                 
                 rgb = colors[color_code]
@@ -55,6 +71,7 @@ class DrawPizza(Node):
                 
                 self.move_forward(distance)
 
+        self.teleport_to(start_x,new_y)
 
 
 def main(args=None):
