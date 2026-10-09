@@ -8,6 +8,7 @@
 #!/usr/bin/env python3
 import math
 import rclpy
+import time
 from rclpy.node import Node
 from turtlesim.msg import Pose
 #from geometry_msgs.msg import Twist
@@ -40,8 +41,13 @@ class DrawPizza(Node):
         req.angular =0.0
         return self.teleport_rel.call_async(self.req)
 
-    def teleport_to(self,x,y):
-        pass
+    def teleport_to(self, x, y):
+            req = TeleportAbsolute.Request()
+            req.x = float(x)
+            req.y = float(y)
+            req.theta = 0.0  
+            self.teleport_abs.call_async(req)
+            time.sleep(0.02)
 
     def set_pen(self,rgb):
         req= SetPen.Request()
