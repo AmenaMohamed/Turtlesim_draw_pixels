@@ -1,0 +1,199 @@
+[6.964s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[6.972s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7aed3e16afc0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7aed3e140c50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7aed3e140c50>>, mixin_verb=('build',))
+[7.569s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[7.574s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[7.576s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[7.577s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[7.579s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[7.581s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[7.582s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/c/Users/Owner/Amena/engineering/mindcloud/Tasks/Turtlesim_draw_pixels'
+[7.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[7.592s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[7.594s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[7.598s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[7.600s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[7.602s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[7.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[7.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[7.608s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[8.082s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[8.089s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[8.094s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[8.097s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[8.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[8.124s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[8.127s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[8.133s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[8.170s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extensions ['ignore', 'ignore_ament_install']
+[8.177s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extension 'ignore'
+[8.186s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extension 'ignore_ament_install'
+[8.198s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extensions ['colcon_pkg']
+[8.201s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extension 'colcon_pkg'
+[8.206s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extensions ['colcon_meta']
+[8.210s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extension 'colcon_meta'
+[8.216s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extensions ['ros']
+[8.218s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extension 'ros'
+[8.239s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extensions ['cmake', 'python']
+[8.250s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extension 'cmake'
+[8.261s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extension 'python'
+[8.267s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extensions ['python_setup_py']
+[8.269s] Level 1:colcon.colcon_core.package_identification:_identify(imgs) by extension 'python_setup_py'
+[8.305s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[8.317s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[8.322s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[8.341s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[8.342s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[8.349s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[8.357s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extensions ['ignore', 'ignore_ament_install']
+[8.359s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extension 'ignore'
+[8.363s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extension 'ignore_ament_install'
+[8.369s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extensions ['colcon_pkg']
+[8.370s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extension 'colcon_pkg'
+[8.374s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extensions ['colcon_meta']
+[8.375s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extension 'colcon_meta'
+[8.379s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extensions ['ros']
+[8.380s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extension 'ros'
+[8.391s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extensions ['cmake', 'python']
+[8.392s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extension 'cmake'
+[8.396s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extension 'python'
+[8.399s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extensions ['python_setup_py']
+[8.401s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws) by extension 'python_setup_py'
+[8.417s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[8.419s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extension 'ignore'
+[8.426s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extension 'ignore_ament_install'
+[8.435s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extensions ['colcon_pkg']
+[8.438s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extension 'colcon_pkg'
+[8.444s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extensions ['colcon_meta']
+[8.445s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extension 'colcon_meta'
+[8.460s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extensions ['ros']
+[8.462s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extension 'ros'
+[8.491s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extensions ['cmake', 'python']
+[8.493s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extension 'cmake'
+[8.499s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extension 'python'
+[8.506s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extensions ['python_setup_py']
+[8.508s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src) by extension 'python_setup_py'
+[8.530s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extensions ['ignore', 'ignore_ament_install']
+[8.531s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extension 'ignore'
+[8.539s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extension 'ignore_ament_install'
+[8.550s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extensions ['colcon_pkg']
+[8.552s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extension 'colcon_pkg'
+[8.557s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extensions ['colcon_meta']
+[8.558s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extension 'colcon_meta'
+[8.587s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extensions ['ros']
+[8.589s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extension 'ros'
+[9.295s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'turtle_ws/src/turtle_draw': Error(s) in package 'turtle_ws/src/turtle_draw/package.xml':
+The manifest contains invalid XML:
+mismatched tag: line 21, column 2
+[9.307s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extensions ['cmake', 'python']
+[9.308s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extension 'cmake'
+[9.317s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extension 'python'
+[9.352s] DEBUG:colcon.colcon_core.package_identification:Python package in 'turtle_ws/src/turtle_draw' passes arguments to the setup() function which requires a different identification extension than 'python'
+[9.353s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extensions ['python_setup_py']
+[9.360s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw) by extension 'python_setup_py'
+[11.846s] ERROR:colcon.colcon_core.package_identification:Exception in package identification extension 'python_setup_py' in 'turtle_ws/src/turtle_draw': Command '['/usr/bin/python3', '-c', 'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \'setup.py\', script_args=(\'--dry-run\',), stop_after=\'config\');skip_keys = (\'cmdclass\', \'distclass\', \'ext_modules\', \'metadata\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\'_\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\'metadata\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\'license_files\', \'provides_extras\')};sys.stdout.buffer.write(repr(data).encode(\'utf-8\'))']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/package_identification/__init__.py", line 144, in _identify
+    retval = extension.identify(_reused_descriptor_instance)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 48, in identify
+    config = get_setup_information(setup_py)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 249, in get_setup_information
+    _setup_information_cache[hashable_env] = _get_setup_information(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 296, in _get_setup_information
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-c', 'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \'setup.py\', script_args=(\'--dry-run\',), stop_after=\'config\');skip_keys = (\'cmdclass\', \'distclass\', \'ext_modules\', \'metadata\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\'_\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\'metadata\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\'license_files\', \'provides_extras\')};sys.stdout.buffer.write(repr(data).encode(\'utf-8\'))']' returned non-zero exit status 1.
+
+[11.990s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extensions ['ignore', 'ignore_ament_install']
+[11.996s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extension 'ignore'
+[12.018s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extension 'ignore_ament_install'
+[12.039s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extensions ['colcon_pkg']
+[12.041s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extension 'colcon_pkg'
+[12.061s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extensions ['colcon_meta']
+[12.063s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extension 'colcon_meta'
+[12.142s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extensions ['ros']
+[12.144s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extension 'ros'
+[12.227s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extensions ['cmake', 'python']
+[12.228s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extension 'cmake'
+[12.242s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extension 'python'
+[12.263s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extensions ['python_setup_py']
+[12.265s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/resource) by extension 'python_setup_py'
+[12.447s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extensions ['ignore', 'ignore_ament_install']
+[12.450s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extension 'ignore'
+[12.460s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extension 'ignore_ament_install'
+[12.482s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extensions ['colcon_pkg']
+[12.484s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extension 'colcon_pkg'
+[12.498s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extensions ['colcon_meta']
+[12.501s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extension 'colcon_meta'
+[12.519s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extensions ['ros']
+[12.523s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extension 'ros'
+[12.590s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extensions ['cmake', 'python']
+[12.593s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extension 'cmake'
+[12.623s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extension 'python'
+[12.640s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extensions ['python_setup_py']
+[12.654s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/test) by extension 'python_setup_py'
+[12.744s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extensions ['ignore', 'ignore_ament_install']
+[12.771s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extension 'ignore'
+[13.703s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extension 'ignore_ament_install'
+[14.020s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extensions ['colcon_pkg']
+[14.028s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extension 'colcon_pkg'
+[14.100s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extensions ['colcon_meta']
+[14.111s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extension 'colcon_meta'
+[14.279s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extensions ['ros']
+[14.293s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extension 'ros'
+[14.554s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extensions ['cmake', 'python']
+[14.558s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extension 'cmake'
+[14.581s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extension 'python'
+[14.594s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extensions ['python_setup_py']
+[14.596s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw) by extension 'python_setup_py'
+[14.666s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[14.668s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extension 'ignore'
+[14.678s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extension 'ignore_ament_install'
+[14.699s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extensions ['colcon_pkg']
+[14.701s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extension 'colcon_pkg'
+[14.713s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extensions ['colcon_meta']
+[14.714s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extension 'colcon_meta'
+[14.734s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extensions ['ros']
+[14.738s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extension 'ros'
+[14.802s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extensions ['cmake', 'python']
+[14.803s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extension 'cmake'
+[14.824s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extension 'python'
+[14.848s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extensions ['python_setup_py']
+[14.851s] Level 1:colcon.colcon_core.package_identification:_identify(turtle_ws/src/turtle_draw/turtle_draw/__pycache__) by extension 'python_setup_py'
+[14.872s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[14.882s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[14.887s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[14.889s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[14.890s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[15.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[15.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[15.121s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/amena/ros2_ws/install
+[15.132s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 288 installed packages in /opt/ros/jazzy
+[15.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[15.582s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[15.587s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[15.592s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.595s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.597s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[15.599s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[15.810s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[15.813s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[15.814s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[15.816s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[15.873s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[15.875s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[15.904s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[15.905s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/c/Users/Owner/Amena/engineering/mindcloud/Tasks/Turtlesim_draw_pixels/install/local_setup.ps1'
+[15.923s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/c/Users/Owner/Amena/engineering/mindcloud/Tasks/Turtlesim_draw_pixels/install/_local_setup_util_ps1.py'
+[15.941s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/c/Users/Owner/Amena/engineering/mindcloud/Tasks/Turtlesim_draw_pixels/install/setup.ps1'
+[15.966s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/c/Users/Owner/Amena/engineering/mindcloud/Tasks/Turtlesim_draw_pixels/install/local_setup.sh'
+[15.996s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/c/Users/Owner/Amena/engineering/mindcloud/Tasks/Turtlesim_draw_pixels/install/_local_setup_util_sh.py'
+[16.034s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/c/Users/Owner/Amena/engineering/mindcloud/Tasks/Turtlesim_draw_pixels/install/setup.sh'
+[16.063s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/c/Users/Owner/Amena/engineering/mindcloud/Tasks/Turtlesim_draw_pixels/install/local_setup.bash'
+[16.089s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/c/Users/Owner/Amena/engineering/mindcloud/Tasks/Turtlesim_draw_pixels/install/setup.bash'
+[16.118s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/c/Users/Owner/Amena/engineering/mindcloud/Tasks/Turtlesim_draw_pixels/install/local_setup.zsh'
+[16.143s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/c/Users/Owner/Amena/engineering/mindcloud/Tasks/Turtlesim_draw_pixels/install/setup.zsh'
