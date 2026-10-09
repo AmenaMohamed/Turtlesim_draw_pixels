@@ -10,7 +10,7 @@ import math
 import rclpy
 from rclpy.node import Node
 from turtlesim.msg import Pose
-from geometry_msgs.msg import Twist
+#from geometry_msgs.msg import Twist
 from turtlesim.srv import TeleportRelative ,SetPen
 from formating import  image , formating , colors
 
@@ -26,46 +26,18 @@ class DrawPizza(Node):
         self.control_client = self.create_client(TeleportRelative, '/turtle1/teleport_relative', 10)
         self.pen_client= self.create_client(SetPen, '/turtle1/set_pen')
 
-        self.pose_sub_ = self.create_subscription(
-            Pose,
-            'turtle1/pose',
-            self.pose_callback,
-            10
-        )
+
 
         self.timer_ = self.create_timer(0.01, self.draw)
     
-    def pose_callback(self, msg):
-        
-        self.pose_ = msg
 
     def move_forward_request(self,distance):
         #packing msg
-        control_msg = TeleportRelative()
-        speed=2
+        req = TeleportRelative().Request()
         #no rotations or any movement except in x_axis
-        .linear.x = abs(speed)
-
-        vel_msg.linear.y = 0
-        vel_msg.linear.z = 0
-        vel_msg.angular.x = 0
-        vel_msg.angular.y = 0
-        vel_msg.angular.z = 0
-
-        t0 = rclpy.Time.now().to_sec()
-        current_distance = 0
-
-        while(current_distance < distance):
-             #Publish the velocity
-             self.cmd_vel_pub_.publish(vel_msg)
-             #Takes actual time to velocity calculus
-             t1=rclpy.Time.now().to_sec()
-             #Calculates distancePoseStamped
-             current_distance= speed*(t1-t0)
-             #After the loop, stops the robot
-        vel_msg.linear.x = 0
-        #Force the robot to stop
-        self.cmd_vel_pub_.publish(vel_msg)
+        req.linear= float(distance)
+        req.angular =0.0
+        return self.cli.call_async(self.req)
         
 
     def set_pen(self):
